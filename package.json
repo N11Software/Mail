@@ -1,0 +1,32 @@
+{
+  "name": "mail",
+  "version": "1.0.0",
+  "description": "Webmail client for Null-LLC contributors and \"employees\"",
+  "main": "index.js",
+  "dependencies": {
+    "@types/react": "^17.0.19",
+    "next": "^11.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.2",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  },
+  "scripts": {
+    "start": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Null-LLC/Mail.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Null-LLC/Mail/issues"
+  },
+  "homepage": "https://github.com/Null-LLC/Mail#readme"
+}

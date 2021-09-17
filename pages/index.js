@@ -50,7 +50,7 @@ let Mail = props => {
             <Link href="/important">
               <a className={`${page == '/important' ? 'font-bold' : 'text-gray-400 hover:text-gray-500'} flex flex-row space-x-3`}>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
                 <span>Important</span>
               </a>
@@ -149,30 +149,113 @@ let Mail = props => {
         </div>
       </div>
 
-      <div className="flex flex-col w-1/3 h-screen bg-true-gray-100 p-4">
-        <form className="flex flex-row bg-gray-200 rounded-md px-4 py-2 outline-none search-active-form w-full mb-8">
-          <input type="text" placeholder="Search" className="w-full bg-gray-200 text-gray-400 px-1 rounded-md outline-none search-active-input"/>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400 mx-1" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
-          </svg>
-        </form>
-        <div className="p-4 w-full bg-white rounded-lg">
-          <div className="flex flex-row space-x-2 w-full">
-            <img className="rounded-full w-12 h-12" src="/pfp.png"/>
-            <div className="flex flex-col w-full">
-              <div className="flex flex-row w-full">
-                <span className="font-black mt-1 text-sm text-gray-700 w-full">Jenny Oswald</span>
-                <span className="font-bold mt-2 text-xs text-right text-gray-200 w-full">Just now</span>
+      <div className="flex flex-col w-1/3 h-screen bg-true-gray-100">
+        <div className="p-4">
+          <form className="flex flex-row bg-gray-200 rounded-md px-4 py-2 outline-none search-active-form w-full">
+            <input type="text" placeholder="Search" className="w-full bg-gray-200 text-gray-400 px-1 rounded-md outline-none search-active-input"/>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400 mx-1" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
+            </svg>
+          </form>
+        </div>
+        <div className="flex flex-col space-y-2 overflow-y-auto overflow-x-hidden h-full p-4">
+          <div className="p-4 w-full bg-white rounded-lg">
+            <div className="flex flex-row space-x-2 w-full">
+              <img className="rounded-full w-12 h-12" src="/pfp.png"/>
+              <div className="flex flex-col w-full">
+                <div className="flex flex-row w-full">
+                  <span className="font-black mt-1 text-sm text-gray-700 w-full">Jenny Oswald</span>
+                  <span className="font-bold mt-2 text-xs text-right text-gray-200 w-full">Just now</span>
+                </div>
+                <span className="text-sm text-gray-600 font-semibold">Moodboard Update</span>
+                <span className="text-sm text-gray-400">Hi den! I've been thinking about one thing. Do you realize that it's so damn...</span>
               </div>
-              <span className="text-sm text-gray-600 font-semibold">Moodboard Update</span>
-              <span className="text-sm text-gray-400">Hi den! I've been thinking about one thing. Do you realize that it's so damn...</span>
+            </div>
+          </div>
+          <div className="p-4 w-full bg-white rounded-lg">
+            <div className="flex flex-row space-x-2 w-full">
+              <img className="rounded-full w-12 h-12" src="/pfp.png"/>
+              <div className="flex flex-col w-full">
+                <div className="flex flex-row w-full">
+                  <span className="font-black mt-1 text-sm text-gray-700 w-full">Jenny Oswald</span>
+                  <span className="font-bold mt-2 text-xs text-right text-gray-200 w-full">Just now</span>
+                </div>
+                <span className="text-sm text-gray-600 font-semibold">Moodboard Update</span>
+                <span className="text-sm text-gray-400">Hi den! I've been thinking about one thing. Do you realize that it's so damn...</span>
+              </div>
+            </div>
+          </div>
+          <div className="p-4 w-full bg-white rounded-lg">
+            <div className="flex flex-row space-x-2 w-full">
+              <img className="rounded-full w-12 h-12" src="/pfp.png"/>
+              <div className="flex flex-col w-full">
+                <div className="flex flex-row w-full">
+                  <span className="font-black mt-1 text-sm text-gray-700 w-full">Jenny Oswald</span>
+                  <span className="font-bold mt-2 text-xs text-right text-gray-200 w-full">Just now</span>
+                </div>
+                <span className="text-sm text-gray-600 font-semibold">Moodboard Update</span>
+                <span className="text-sm text-gray-400">Hi den! I've been thinking about one thing. Do you realize that it's so damn...</span>
+              </div>
+            </div>
+          </div>
+          <div className="p-4 w-full bg-white rounded-lg">
+            <div className="flex flex-row space-x-2 w-full">
+              <img className="rounded-full w-12 h-12" src="/pfp.png"/>
+              <div className="flex flex-col w-full">
+                <div className="flex flex-row w-full">
+                  <span className="font-black mt-1 text-sm text-gray-700 w-full">Jenny Oswald</span>
+                  <span className="font-bold mt-2 text-xs text-right text-gray-200 w-full">Just now</span>
+                </div>
+                <span className="text-sm text-gray-600 font-semibold">Moodboard Update</span>
+                <span className="text-sm text-gray-400">Hi den! I've been thinking about one thing. Do you realize that it's so damn...</span>
+              </div>
+            </div>
+          </div>
+          <div className="p-4 w-full bg-white rounded-lg">
+            <div className="flex flex-row space-x-2 w-full">
+              <img className="rounded-full w-12 h-12" src="/pfp.png"/>
+              <div className="flex flex-col w-full">
+                <div className="flex flex-row w-full">
+                  <span className="font-black mt-1 text-sm text-gray-700 w-full">Jenny Oswald</span>
+                  <span className="font-bold mt-2 text-xs text-right text-gray-200 w-full">Just now</span>
+                </div>
+                <span className="text-sm text-gray-600 font-semibold">Moodboard Update</span>
+                <span className="text-sm text-gray-400">Hi den! I've been thinking about one thing. Do you realize that it's so damn...</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col w-full h-screen bg-white">
-        test
+      <div className="flex flex-col w-full h-screen bg-white p-4">
+        <div className="flex flex-row space-x-2 w-full">
+          <div className="flex flex-row space-x-2 w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400 hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400 hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400 hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400 hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400 hover:text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+            </svg>
+          </div>
+          <div className="flex flex-row">
+            <span className="text-gray-400">1/1</span>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
 

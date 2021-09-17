@@ -9,8 +9,7 @@
     "cookies": "latest",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "typescript": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "autoprefixer": "latest",
@@ -18,7 +17,9 @@
     "tailwindcss": "latest"
   },
   "scripts": {
-    "start": "next"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",

@@ -159,7 +159,7 @@ let Mail = props => {
           </form>
         </div>
         <div className="flex flex-col space-y-2 overflow-y-auto overflow-x-hidden h-full p-4">
-          <div className="p-4 w-full bg-white rounded-lg">
+          <div className="p-4 w-full bg-white rounded-lg shadow-md">
             <div className="flex flex-row space-x-2 w-full">
               <img className="rounded-full w-12 h-12" src="/pfp.png"/>
               <div className="flex flex-col w-full">
@@ -228,7 +228,7 @@ let Mail = props => {
       </div>
 
       <div className="flex flex-col w-full h-screen bg-white p-4">
-        <div className="flex flex-row space-x-2 w-full">
+        <div className="flex flex-row space-x-2 w-full mb-8">
           <div className="flex flex-row space-x-2 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400 hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -255,6 +255,11 @@ let Mail = props => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </div>
+        </div>
+        <div className="flex flex-col w-full space-y-4">
+          <div className="w-full h-0.5 bg-gray-100"></div>
+          <span className="w-full text-center text-gray-300">5 previous messages</span>
+          <div className="w-full h-0.5 bg-gray-100"></div>
         </div>
       </div>
     </div>
